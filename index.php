@@ -1,6 +1,7 @@
 <?php
 
 // Point d'entrée pour la page d'accueil
+require __DIR__.'/inc/data/datas.php';
 
 // Inclusion des fichiers nécessaires
 require __DIR__.'/inc/templates/header.tpl.php';
