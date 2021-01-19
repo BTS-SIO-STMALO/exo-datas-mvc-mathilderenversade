@@ -1,0 +1,1 @@
+<h2>Salut moi c'est les catégories</h2>
