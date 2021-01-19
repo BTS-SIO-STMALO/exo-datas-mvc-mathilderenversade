@@ -9,7 +9,7 @@ class Data {
     public function __construct()
     {
         require __DIR__.'/../data/datas.php';
-        $this->$articlesList = $dataArticlesList;
+        $this->articlesList = $dataArticlesList;
         $this->authorsList = $dataAuthorsList;
         $this->categoriesList = $dataCategoriesList;
     }

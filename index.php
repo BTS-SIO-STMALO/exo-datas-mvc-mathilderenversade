@@ -1,9 +1,19 @@
 <?php
 
 // Point d'entrée pour la page d'accueil
-require __DIR__.'/inc/data/datas.php';
+//require __DIR__.'/inc/data/datas.php';
+require __DIR__.'/inc/classes/Article.php';
+require __DIR__.'/inc/classes/Data.php';
 
-var_dump($_GET);
+$data = new Data;
+
+//var_dump($data);
+
+$articlesList = $data->getArticlesList();
+$categoriesList = $data->getCategoriesList();
+$authorList = $data->getAuthorsList();
+
+//var_dump($_GET);
 
 // Il est nécessaire d'initialiser ma variable $currentPage sinon j'ai une erreur sur mon index. Je l'initialise avec la valeur home pour que ça affiche bien la home.tpl.php 
 $currentPage = 'home';

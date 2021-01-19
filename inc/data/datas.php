@@ -10,17 +10,17 @@ $dataArticlesList = [
     ),
     2 => new Article(
         "Pourquoi les chiens sentent-ils mauvaise de la bouche ?",
-        "<p> Senteur poubelle ou senteur caniveau, l'haleine de nos canidés est un vrai problème du quotidien. Il existe pourtant des solutions simples </p>",
-        "Nicolas",
-        '2020-03-25', 
-        'Soins et santé'
+        "<p> Senteur poubelle ou senteur caniveau, l'haleine de nos canidés est un vrai problème du quotidien. Il existe pourtant des solutions simples </p>", 
+        "Nicolas", 
+        "2020-07-13", 
+        "Mathilde"
     ),
     3 => new Article(
         "Top 10 des meilleurs jouets à tester",
         "<p> Peluche, baballe, pouet pouet, jeux d'intelligence et d'agilité, nous avons sélectionné pour vous les meilleurs jeux 2020 pour votre animal </p>",
         "Pierre",
-        '2020-12-31',
-        'Loisirs'
+        "2020-12-31",
+        "Loisirs"
     ),
 ];
 /*
