@@ -21,4 +21,3 @@
 - afficher le code HTML grâce aux templates 
 - vérifier l'affichage correct des 3 nouvelles pages et les intégrer à la navigation
 
-commit juste de création d'un branche 
