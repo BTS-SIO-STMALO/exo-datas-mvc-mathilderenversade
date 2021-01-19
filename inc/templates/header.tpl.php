@@ -18,9 +18,9 @@
         <nav>
             <ul class="nav nav-pills">
                 <li class="nav-item"><a class="nav-link active" href="index.php">index.php</a></li>
-                <li class="nav-item"><a class="nav-link" href="category.php">category.php</a></li>
-                <li class="nav-item"><a class="nav-link" href="author.php">author.php</a></li>
-                <li class="nav-item"><a class="nav-link" href="article.php">article.php</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?page=category">category.php</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?page=author">author.php</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?page=article">article.php</a></li>
             </ul>
         </nav>
     </header>
