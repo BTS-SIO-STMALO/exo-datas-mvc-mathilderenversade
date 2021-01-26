@@ -30,6 +30,13 @@ $dataArticlesList = [
         "date"=>'2020-01-05',
         "category" =>'Education'
     ],
+    5 => [
+        "title" => "Salut je suis nouveau",
+        "content"=> "<p> Lorem ipsum sin doloris</p>",
+        "author" =>"Colette",
+        "date"=>'2020-01-05',
+        "category" =>'Education'
+    ],
 ];
 
 // Les catégories
