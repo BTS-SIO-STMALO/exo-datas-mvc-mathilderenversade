@@ -5,6 +5,11 @@ var_dump($idUrl);
 ?>
 
 <article>
-<h2><?=$dataArticlesList[$idUrl]['title'];?></h2>
-<?= $dataArticlesList[$idUrl]['content'];?>
+
+<?php
+//var_dump($articlesList);
+?>
+
+<h2><?=$articlesList[$idUrl]->getTitle();?></h2>
+<?= $articlesList[$idUrl]->getContent();?>
 </article>
