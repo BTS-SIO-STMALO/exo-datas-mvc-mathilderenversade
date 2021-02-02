@@ -23,6 +23,22 @@ if (isset ($_GET['page'])){
     // je veux récupérer la valeur stockée dans la clé page de $_GET. Cette valeur va me permettre d'appeler la bonne template.
     $currentPage = $_GET['page'];
 }
+if ($currentPage == 'article'){
+
+    if (isset ($_GET['id'])){
+        // si la clé id de ma super-globale n'est pas vide ni null je peux donc récupérée l'id
+        $articleId = $_GET['id'];
+        // J'ai bien récupéré mon id, je peux donc récupérer un article précis via ma méthode getArticle de mon objet data en lui transmettant en paramètre l'id. 
+        $articleToShow = $data->getArticle($articleId);
+
+        if ($articleToShow === false){
+            exit('Article n\'existe pas');
+        } 
+    } else {
+        // SI y'a pas d'id , on affiche un message et on stoppe
+        exit('ID non fourni');
+    }
+}
 
 
 // Inclusion des fichiers nécessaires

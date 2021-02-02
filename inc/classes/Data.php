@@ -38,4 +38,16 @@ class Data {
     {
         return $this->categoriesList;
     }
+
+    /**
+     * Je veux une méthode qui me permet d'obtenir un seul article en fonction d'un paramètre qui serait donc l'id de mon article
+     */
+    public function getArticle(int $id){
+        if (isset($this->articlesList[$id])){
+            return $this->articlesList[$id];
+        }else{
+            // si par exemple, on n'a pas transmis ou récupéré d'id ou bien que l'id reçu n'est pas contenu dans articlesList dans ce cas
+            return false;
+        }
+    }
 }

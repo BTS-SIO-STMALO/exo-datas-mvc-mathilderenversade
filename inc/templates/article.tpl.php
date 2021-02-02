@@ -10,6 +10,10 @@ var_dump($idUrl);
 //var_dump($articlesList);
 ?>
 
-<h2><?=$articlesList[$idUrl]->getTitle();?></h2>
-<?= $articlesList[$idUrl]->getContent();?>
+<!-- <h2><//?=$articlesList[$idUrl]->getTitle();?></h2>
+<//?= $articlesList[$idUrl]->getContent();?> -->
+
+<h2><?=$articleToShow->getTitle();?></h2>
+<p><?=$articleToShow->getContent();?></p>
+
 </article>
