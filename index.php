@@ -3,11 +3,13 @@
 // Point d'entrée pour la page d'accueil
 //require __DIR__.'/inc/data/datas.php';
 require __DIR__.'/inc/classes/Article.php';
-require __DIR__.'/inc/classes/Data.php';
+//require __DIR__.'/inc/classes/Data.php';
 
-$data = new Data;
+require __DIR__.'/inc/classes/DBConnexion.php';
 
-//var_dump($data);
+$data = new DBConnexion ;
+
+var_dump($data);
 
 $articlesList = $data->getArticlesList();
 $categoriesList = $data->getCategoriesList();
