@@ -25,4 +25,27 @@ class DBConnexion {
         }
         $this->pdo = $pdoConnexion;
     }
+
+    public function getArticles(){
+        $sql = '
+            SELECT * FROM `article`;
+        ';
+
+        $pdoStatement = $this->pdo->query($sql);
+
+        $articleList = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $articleList;
+    }
+
+    public function getAuthorsList() {
+        $sql = '
+        SELECT author FROM article;
+        ';
+
+        $pdoStatement = $this->pdo->query($sql);
+        $authorList = $pdoStatement->fetchAll(PDO::FETCH_COLUMN);
+
+        return $authorList;
+    }
 }

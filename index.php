@@ -9,13 +9,16 @@ require __DIR__.'/inc/classes/DBConnexion.php';
 
 $data = new DBConnexion ;
 
-var_dump($data);
+//var_dump($data);
 
-$articlesList = $data->getArticlesList();
-$categoriesList = $data->getCategoriesList();
+$articlesList = $data->getArticles();
+
+//var_dump($articlesList);
+
+//$categoriesList = $data->getCategoriesList();
 $authorList = $data->getAuthorsList();
 
-//var_dump($_GET);
+var_dump($authorList);
 
 // Il est nécessaire d'initialiser ma variable $currentPage sinon j'ai une erreur sur mon index. Je l'initialise avec la valeur home pour que ça affiche bien la home.tpl.php 
 $currentPage = 'home';
